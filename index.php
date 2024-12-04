@@ -23,6 +23,35 @@
 	// Константа
 	define('MY_AGE', 24);
 	echo '<br> Constant: ' . MY_AGE;
+	// Математическая дествия  
+	echo '<h1>Математическая дествия</h1>';
+	$x = 10;
+	$y = 20;
+	echo $x + $y . '<br>';
+	echo $x - $y . '<br>';
+	echo $x * $y . '<br>';
+	echo $x / $y . '<br>';
+	echo $x % $y . '<br>';
+
+	$x += 10; // x = x + 10
+	$y -= 10; // y = y - 10
+	echo $x . '<br>';
+	echo $y . '<br>';
+
+	$x++; // $x += 1;
+	$x--; // $x -= 1;
+
+	echo M_PI . '<br>'; // 3.14
+	echo M_E . '<br>'; // 2.7
+
+	echo abs(-22) . '<br>';
+	echo ceil(3.1) . '<br>';
+	echo floor(3.9) . '<br>';
+	echo round(3.5) . '<br>';
+	echo round(3.5435323, 2) . '<br>';
+	echo mt_rand(1, 20) . '<br>';
+	echo min(2,5,7,-8,3,7,1,-4) . '<br>';
+	echo max(2,5,7,-8,3,7,1,-4);
 ?>
 </body>
 </html>
