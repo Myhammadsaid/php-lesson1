@@ -89,6 +89,29 @@
 	}else{
 		echo 'Резултат не равно world или hello';
 	}
+
+	// Оператор «Switch-case»
+	echo '<h1>Оператор «Switch-case»</h1>';
+	$x = 2;
+	switch($x){
+		case 6:
+			echo 'x = 6';
+			break;
+		case 7:
+			echo 'x = 7';
+			break;
+		case 8:
+			echo 'x = 8';
+			break;
+		case 9:
+			echo 'x = 9';
+			break;
+		case 10:
+			echo 'x = 10';
+		break;
+		default:
+			echo 'default work!';
+	}
 ?>
 </body>
 </html>
