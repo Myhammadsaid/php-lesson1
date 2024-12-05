@@ -134,6 +134,49 @@
 
 	$matrix[0][1] = 10;
 	echo $matrix[0][1] . '<br>';
+
+	// Цикл for, while и do while.
+	echo '<h1>Цикл for, while и do while.</h1>';
+
+	// for($i = 1; $i <= 10; $i++){
+	// 	echo $i . '<br>';
+	// }
+
+	// $a = 1;
+	// while ($a <= 10) {
+	// 	echo $a.'<br>';
+	// 	$a++;
+	// }
+
+	// $i = 100;
+	// do{
+	// 	echo $i;
+	// }while($i < 100)
+
+	// for($i = 100; $i > 10; $i /= 2){
+	// 	if($i < 15)
+	// 		break;
+	// 	if($i % 2 == 0)
+	// 		continue;
+	// 	echo $i . '<br>';
+	// }
+
+	// $list = [5,3,7,32,4,'some'];
+	// for($i = 0; $i < count($list); $i++)
+	// 	echo "Element $i: $list[$i].<br>";
+
+	$list = ['age' => 40, 'name' => 'John', 'hobby' => 'Football'];
+	// foreach ($list as $item => $value){
+	// 	echo 'Key:' . $item. 'Value:'. $value. '<br>';
+	// }
+
+	$arr = [4,6,32,6,7];
+
+	// foreach($arr as $value)
+		// echo 'Value:'. $value. '<br>';
+
+	// foreach($arr as $i => $value)
+	// 	echo 'Index:'. $i. 'Value'. $value. '<br>';
 ?>
 </body>
 </html>
