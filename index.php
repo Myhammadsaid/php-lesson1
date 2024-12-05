@@ -52,6 +52,18 @@
 	echo mt_rand(1, 20) . '<br>';
 	echo min(2,5,7,-8,3,7,1,-4) . '<br>';
 	echo max(2,5,7,-8,3,7,1,-4);
+
+	// Строковые операции
+	echo '<h1>Строковые операции</h1>';
+	$str = 'Hello';
+	// echo "VAR: $str" . '<br>';
+	// echo 'VAR: $str' . '<br>';
+	echo "<input type='text'>" . '<br>';
+	$length = strlen($str);
+	echo $length . '<br>';
+	echo strtoupper(trim('     some     ')) . '<br>';    
+	echo strtolower('HELLO') . '<br>';
+	echo md5('qwerty')
 ?>
 </body>
 </html>
