@@ -63,7 +63,32 @@
 	echo $length . '<br>';
 	echo strtoupper(trim('     some     ')) . '<br>';    
 	echo strtolower('HELLO') . '<br>';
-	echo md5('qwerty')
+	echo md5('qwerty
+	');
+
+	// Условные операторы
+	echo '<h1>Условные операторы</h1>';
+	$a = 15;
+	$b = 12;
+	if($a == $b){
+		echo $a + $b . '<br>';
+	}else if($a > 10 & $b > 10){
+		echo 'Резултат больше 10' . '<br>';
+		$result = $a + $b;
+		if($result > 40){
+			echo 'Резултат больше 40' . '<br>';
+		}else{
+			echo 'Резултат меньше 40 - ' . $result . '<br>';
+		}
+	}else{
+		echo $a - $b . '<br>';
+	}
+	$str = 'hello';
+	if($str == 'world' || $str == 'hello'){
+		echo 'Резултат равно world или hello';
+	}else{
+		echo 'Резултат не равно world или hello';
+	}
 ?>
 </body>
 </html>
