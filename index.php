@@ -112,6 +112,28 @@
 		default:
 			echo 'default work!';
 	}
+
+	// Массивы данных. Одномерные и многомерные
+	echo '<h1>Массивы данных. Одномерные и многомерные</h1>';
+	// Одномерный массивы
+	$nums = array(7,3,5,9,1,-2,5);
+	echo $nums[1] . '<br>';
+
+	$arr = [3,8,2.43,'hello',true, 45];
+	$arr[1] = "false";
+	echo $arr[1] . '<br>';
+
+	// Ассоциативный массивы
+	$list = ['age' => 34, 'name' => 'Alex', 'hobby' => 'Football'];
+	$list['name'] = 'John';
+	echo $list['name'] . '<br>';
+
+	// Многомерные массивы
+	$matrix = [[4,7,true],[6,'hello',4.2],[1,2,3]];
+	echo $matrix[0][1] . '<br>';
+
+	$matrix[0][1] = 10;
+	echo $matrix[0][1] . '<br>';
 ?>
 </body>
 </html>
