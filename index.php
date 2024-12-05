@@ -177,6 +177,50 @@
 
 	// foreach($arr as $i => $value)
 	// 	echo 'Index:'. $i. 'Value'. $value. '<br>';
+
+	// Функции. Область видимости
+	echo '<h1>Функции. Область видимости</h1>';
+
+	// function info($word){
+	// 	echo $word.'<br>';
+	// }
+	// info('Hello');
+
+	function math($a, $b){
+		return $a + $b;
+	}
+	$res_1 = math(5,7);
+	$res_2 = math(8,2);
+	info($res_1);
+	info($res_2);
+
+	function summary($arr) {
+		$summa = 0;
+		foreach($arr as $value){
+			$summa += $value;
+		}
+		return $summa;
+	}
+	$list = [1,5,3,7];
+	echo summary($list). '<br>';
+	echo summary([4,6,2]). '<br>';
+
+	function info(){
+		global $x;
+		$x = 0;
+	}
+	$x = 10;
+	info();
+	echo $x.'<br>';
+
+	function click(){
+		static $count;
+		$count++;
+		echo $count.'<br>';
+	}
+	click();
+	click();
+	click();
 ?>
 </body>
 </html>
